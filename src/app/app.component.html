@@ -1,0 +1,13 @@
+<div class="container">
+
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+                <li *ngFor="let product of products"><a [routerLink]="['/product',product.id]">{{product.name}}</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <router-outlet></router-outlet>
+
+</div>
